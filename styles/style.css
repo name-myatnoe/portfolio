@@ -23,8 +23,71 @@
     --orange: #ff751f;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     font-family: var(--font-family);
+}
+
+nav{
+    background-color: var(--white);
+    color: var(--black);
+    position: sticky;
+    top: 20px;
+    width: 80%;
+    height: 50px;
+    left: 10%;
+    padding: 5px;
+    border-radius: 100px;
+    border: 2px solid var(--black);
+    box-shadow: 3px 3px 0px black;
+    display: flex;
+    align-items: center; 
+    justify-content: space-between;
+}
+
+.profile{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 5px;
+    text-decoration: none;
+    color: var(--black);
+}
+
+.profile-img{
+    width: 40px;
+    height: 40px;
+    border-radius: 100px;
+    background-color: var(--black);
+}
+
+.nav-link{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 30px;
+}
+
+.nav-link a{
+    text-decoration: none;
+    color: var(--black);
+    cursor: pointer;
+}
+
+.mobile-nav-toggle{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    border: none;
+    margin: 10px;
+}
+.mobile-nav-toggle div{
+    width: 20px;
+    height: 3px;
+    background-color: var(--black);
 }
 
 #hero{
@@ -39,7 +102,7 @@ body{
     width: 100%;
 }
 
-#project{
+#projects{
     background-color: var(--green) ;
     height: 100vh;
     width: 100%;
@@ -49,4 +112,38 @@ body{
     background-color: var(--orange);
     height: 100vh;
     width: 100%;
+}
+
+@media (max-width: 480px) {
+    nav{
+        width: 90%;
+        height: 5%;
+    }
+    .nav-link{
+        display: none;
+    }
+}
+
+@media (max-width: 768px) and (min-width: 481px){
+    nav{
+        background-color: var(--green);
+    }
+    .nav-link{
+        display: none;
+    }
+}
+
+@media (max-width: 1024px) and (min-width: 769px) {
+    nav{
+        background-color: var(--orange);
+    }
+    .nav-link{
+        display: none;
+    }
+}
+
+@media (max-width: 1200px) and (min-width: 1025px){
+    nav{
+        background-color: var(--blue);
+    }
 }
