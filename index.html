@@ -8,12 +8,14 @@
 </head>
 <body>
     <nav>
-        <a class="profile" href="#">
+        <div class="nav-container">
+            <a class="profile" href="#">
             <div class="profile-img"></div>
             <p>It's me</p>
         </a>
+
         <!-- Desktop Nav Link -->
-        <div class="nav-link">
+        <div class="nav-links">
             <a href="#experience">Experience</a>
             <a href="#projects">Projects</a>
             <a href="#contact">Contact</a>
@@ -25,10 +27,19 @@
             <div class="mobile-nav-toggle-line2"></div>
             <div class="mobile-nav-toggle-line3"></div>
         </button>
-        </nav>
+        </div>
+
+        <div class="mobile-nav-links">
+            <a href="#experience">Experience</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
     <section id="hero"></section>
     <section id="experience"></section>
     <section id="projects"></section>
     <section id="contact"></section>
+
+    <script src="./js/index.js"></script>
 </body>
 </html>
