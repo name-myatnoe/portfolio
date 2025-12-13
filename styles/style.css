@@ -97,12 +97,12 @@ nav{
     transition: all ease 0.3s;
 }
 
-.active-mobile-nav-toggle-line2{
-    opacity: 0;
-}
-
 .active-mobile-nav-toggle-line1{
     transform: rotate(45deg) translate(6px, 5.5px);
+}
+
+.active-mobile-nav-toggle-line2{
+    opacity: 0;
 }
 
 .active-mobile-nav-toggle-line3{
