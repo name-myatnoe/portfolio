@@ -1,0 +1,67 @@
+*{
+    padding: 0;
+    border: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "JetBrains Mono";
+    src: url('./../fonts/JetBrainsMono-VariableFont_wght.ttf');
+}
+
+@font-face {
+    font-family: "Dynamo Shadow";
+    src: url('./../fonts/Dynamo\ EF\ Shadow\ Bold.otf');
+}
+
+:root{
+    --font-family: "JetBrains Mono";
+    --font-family-title: "Dynamo Shadow";
+
+    --font-text: 16px;
+    --font-title: 1.5rem;
+
+    --black: #272727;
+    --white: #f8f8f8;
+    --blue: #223cb2;
+    --red: #d11c1c;
+    --green: #2b9422;
+    --orange: #ff751f;
+}
+
+html{
+    font-family: var(--font-family);
+    scroll-behavior: smooth;
+    font-size: var(--font-text);
+}
+
+body{
+    font-family: var(--font-family);
+}
+
+.btn{
+    font-family: "JetBrains Mono";
+    background-color: var(--white);
+    border: 2px solid var(--black);
+    border-radius: 50px;
+    box-shadow: 3px 3px 0px var(--black);
+    transition: all 0.3s ease;
+}
+
+.btn:active{
+    box-shadow: 0px px 0px var(--black);
+    transform: translate(3px, 3px);
+}
+
+.btn-lg{
+    padding: 15px 50px;
+}
+
+.btn-md{
+    padding: 7px 14px;
+}
+
+.btn-sm{
+    padding: 5px 10px;
+}
