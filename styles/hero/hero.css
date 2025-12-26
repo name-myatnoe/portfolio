@@ -1,25 +1,38 @@
 #hero{
     background-color: var(--blue);
-    color: var(--white);
     height: 100vh;
     width: 100%;
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
+    align-items: center;
+    position: relative;
 }
-
 #hero h1{
-    font-family: var(--font-family-title);
-    font-size: 7rem;
+    font-family : var(--font-family-title);
     color: var(--white);
 }
-
 #hero p{
     color: var(--white);
 }
-
 #hero button{
     margin-top: 40px;
-    cursor: pointer;
+    
+}
+.hero-img-1{
+    position: absolute;
+    
+
+}
+.hero-img-2{
+    position: absolute;
+    
+}
+.hero-img-3{
+    position: absolute;
+    
+}
+.hero-img-4{
+    position: absolute;
+    
 }

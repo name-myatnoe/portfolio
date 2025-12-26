@@ -1,7 +1,8 @@
-@media (max-width: 480px) {
+/* Extra Small Devices */
+@media(max-width : 480px){
     nav{
         width: 90%;
-        height: 5%;
+        left: 5%;
     }
     .nav-links{
         display: none;
@@ -10,8 +11,8 @@
         display: flex;
     }
 }
-
-@media (max-width: 768px) and (min-width: 481px){
+/* Small Devices */
+@media(max-width : 768px) and (min-width : 481px){
     .nav-links{
         display: none;
     }
@@ -19,25 +20,19 @@
         display: flex;
     }
 }
-
-@media (max-width: 1024px) and (min-width: 769px) {
+/* Medium Devices */
+@media(max-width : 1024px) and (min-width : 769px){
     .nav-links{
         display: flex;
-    }
-    .mobile-nav-links{
-        display: none;
     }
     .mobile-nav-toggle{
         display: none;
     }
 }
-
-@media (min-width: 1024px){
-    .nav-links{
+/* Large Devices */
+@media(min-width : 1025px){
+     .nav-links{
         display: flex;
-    }
-    .mobile-nav-links{
-        display: none;
     }
     .mobile-nav-toggle{
         display: none;

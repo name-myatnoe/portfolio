@@ -5,55 +5,104 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Myat Noe</title>
 
-    <!-- css link -->
-    <link rel="stylesheet" href="styles/index.css">
-    <link rel="stylesheet" href="styles/nav/nav.css">
-    <link rel="stylesheet" href="styles/nav/responsive.css">
-    <link rel="stylesheet" href="styles/hero/hero.css">
-    <link rel="stylesheet" href="styles/experiences/experiences.css">
-    <link rel="stylesheet" href="styles/projects/projects.css">
-    <link rel="stylesheet" href="styles/contact/contact.css">
+    <link rel="stylesheet" href="./styles/index.css">
+    <link rel="stylesheet" href="./styles/responsive.css">
+    <link rel="stylesheet" href="./styles/nav/nav.css">
+    <link rel="stylesheet" href="./styles/nav/responsive.css">
+    <link rel="stylesheet" href="./styles/hero/hero.css">
+    <link rel="stylesheet" href="./styles/hero/responsive.css">
+    <link rel="stylesheet" href="./styles/experiences/experiences.css">
+    <link rel="stylesheet" href="./styles/projects/projects.css">
+    <link rel="stylesheet" href="./styles/contact/contact.css">
 </head>
 <body>
     <nav>
         <div class="nav-container">
-            <a class="profile" href="#">
-            <div class="profile-img"></div>
+        <a href="#" class="profile">
+            <div class="profile-image"></div>
             <p>It's me</p>
         </a>
 
-        <!-- Desktop Nav Link -->
+        <!-- desktop nav links -->
         <div class="nav-links">
-            <a href="#experience">Experience</a>
+            <a href="#experiences">Experiences</a>
             <a href="#projects">Projects</a>
             <a href="#contact">Contact</a>
         </div>
 
-        <!-- Mobile Nav Link -->
+        <!-- mobile nav links  -->
         <button class="mobile-nav-toggle">
-            <div class="mobile-nav-toggle-line1"></div>
-            <div class="mobile-nav-toggle-line2"></div>
-            <div class="mobile-nav-toggle-line3"></div>
+            <div class="mobile-nav-toggle-line-1"></div>
+            <div class="mobile-nav-toggle-line-2"></div>
+            <div class="mobile-nav-toggle-line-3"></div>
         </button>
         </div>
 
         <div class="mobile-nav-links">
-            <a href="#experience">Experience</a>
+            <a href="#experiences">Experiences</a>
             <a href="#projects">Projects</a>
             <a href="#contact">Contact</a>
         </div>
+
     </nav>
     <section id="hero">
         <h1>Myat Noe</h1>
         <p>A Software Engineer</p>
-        <a href="./my-cv.txt" download>
-            <button class="btn btn-lg">Download CV</button>
-        </a>
+        
+            <a href="./my-cv.txt" download="my-cv">
+                <button class="btn btn-lg">Download CV</button>
+            </a>
+
+            <img src="./imgs/hero-1.png" class="hero-img-1">
+            <img src="./imgs/hero-2.png" class="hero-img-2">
+            <img src="./imgs/hero-3.png" class="hero-img-3">
+            <img src="./imgs/hero-4.png" class="hero-img-4">
+        
     </section>
-    <section id="experience"></section>
+    <section id="experiences">
+        <h1>Experiences</h1>
+
+        <div class="timeline">
+            <div class="timeline-item">
+                <div class="date">1 Nov, 2025</div>
+                <div class="smile">
+                    <img src="./imgs/exp-3.png" alt="smile-img" class="smile-img">
+                </div>
+                <div class="content">
+                    <div class="company">Company Name</div>
+                    <div class="position">Position</div>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="date">1 Nov, 2025</div>
+                <div class="smile">
+                    <img src="./imgs/exp-3.png" alt="smile-img" class="smile-img">
+                </div>
+                <div class="content">
+                    <div class="company">Company Name</div>
+                    <div class="position">Position</div>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="date">1 Nov, 2025</div>
+                <div class="smile">
+                    <img src="./imgs/exp-3.png" alt="smile-img" class="smile-img">
+                </div>
+                <div class="content">
+                    <div class="company">Company Name</div>
+                    <div class="position">Position</div>
+                </div>
+            </div>
+        </div>
+        <img src="./imgs/exp-1.png" class="exp-img-1">
+        <img src="./imgs/exp-2.png" class="exp-img-2">
+    </section>
     <section id="projects"></section>
     <section id="contact"></section>
 
     <script src="./js/index.js"></script>
 </body>
 </html>
+
