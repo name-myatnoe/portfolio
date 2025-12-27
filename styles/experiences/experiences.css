@@ -7,28 +7,35 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    /* gap: 70px; */
 }
 .exp-img-1{
     position: absolute;
-    left: 0;
+    /* left: 0;
     bottom: 10%;
-    width: 500px;
+    width: 500px; */
 }
 .exp-img-2{
     position: absolute;
-    right: 0;
+    /* right: 0;
     top: 10%;
-    width: 500px;
+    width: 500px; */
 }
 .timeline{
     position: relative;
     width: 100%;
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    /* gap: 70px; */
 }
 .timeline-item:nth-child(even){
     flex-direction: row-reverse;
+}
+.timeline-item:nth-child(even) .content{
+    text-align: right;
+}
+.timeline-item:nth-child(even) .date{
+    text-align: left;
 }
 .timeline::before{
     content: "";
@@ -36,15 +43,15 @@
     height: 90%;
     border-left: 4px dashed var(--white);
     position: absolute;
-    left: 50%;
+    /* left: 50%; */
     top: 5%;
-    transform: translateX(-50%);
+    /* transform: translateX(-50%); */
     z-index: 1;
 }
 .timeline-item{
     display: flex;
     align-items: center;
-    justify-content: center;
+    /* justify-content: center; */
     color: var(--white);
     position: relative;
     gap: 4%;
@@ -64,9 +71,16 @@
     object-fit: contain;
 }
 .timeline-item .date{
-
+    flex: 1;
+    text-align: right;
 }
 .timeline-item .content{
-
+    flex: 1;
+    text-align: left;
+}
+.timeline-item .content .company{
+    font-family: var(--font-family-title);
+    font-size: var(--font-sub-title);
+    letter-spacing: 5px;
 }
 

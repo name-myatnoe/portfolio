@@ -9,7 +9,7 @@
     position: relative;
 }
 #hero h1{
-    font-family : var(--font-family-title);
+    font-family : var(--font-family-hero-heading);
     color: var(--white);
 }
 #hero p{
