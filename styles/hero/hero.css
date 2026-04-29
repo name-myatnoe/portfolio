@@ -21,18 +21,17 @@
 }
 .hero-img-1{
     position: absolute;
-    
-
+    animation: scale 1s linear infinite;
 }
 .hero-img-2{
     position: absolute;
-    
+    animation: updown 1s linear infinite;
 }
 .hero-img-3{
     position: absolute;
-    
+    animation: updown 1s linear infinite;
 }
 .hero-img-4{
     position: absolute;
-    
+     animation: rotate 5s linear infinite;
 }

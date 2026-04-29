@@ -1,80 +1,101 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Myat Noe</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMNP</title>
 
-    <link rel="stylesheet" href="./styles/index.css">
-    <link rel="stylesheet" href="./styles/responsive.css">
-    <link rel="stylesheet" href="./styles/nav/nav.css">
-    <link rel="stylesheet" href="./styles/nav/responsive.css">
-    <link rel="stylesheet" href="./styles/hero/hero.css">
-    <link rel="stylesheet" href="./styles/hero/responsive.css">
-    <link rel="stylesheet" href="./styles/experiences/experiences.css">
-    <link rel="stylesheet" href="./styles/experiences/responsive.css">
-    <link rel="stylesheet" href="./styles/projects/projects.css">
-    <link rel="stylesheet" href="./styles/contact/contact.css">
-</head>
-<body>
+    <link rel="stylesheet" href="./styles/index.css" />
+    <link rel="stylesheet" href="./styles/responsive.css" />
+    <link rel="stylesheet" href="./styles/nav/nav.css" />
+    <link rel="stylesheet" href="./styles/nav/responsive.css" />
+    <link rel="stylesheet" href="./styles/hero/hero.css" />
+    <link rel="stylesheet" href="./styles/hero/responsive.css" />
+    <link rel="stylesheet" href="./styles/experiences/experiences.css" />
+    <link rel="stylesheet" href="./styles/experiences/responsive.css" />
+    <link rel="stylesheet" href="./styles/projects/projects.css" />
+    <link rel="stylesheet" href="./styles/projects/responsive.css" />
+    <link rel="stylesheet" href="./styles/contact/contact.css" />
+  </head>
+  <body>
     <nav>
-        <div class="nav-container">
+      <div class="nav-container">
         <a href="#" class="profile">
-            <div class="profile-image"></div>
-            <p>It's me</p>
+          <div class="profile-image"></div>
+          <p>it's me</p>
         </a>
 
-        <!-- desktop nav links -->
+        <!-- Desktop Nav Links -->
         <div class="nav-links">
-            <a href="#experiences">Experiences</a>
-            <a href="#projects">Projects</a>
-            <a href="#contact">Contact</a>
+          <a href="#experience">Experience</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
         </div>
 
-        <!-- mobile nav links  -->
+        <!-- Mobile Nav Links -->
         <button class="mobile-nav-toggle">
-            <div class="mobile-nav-toggle-line-1"></div>
-            <div class="mobile-nav-toggle-line-2"></div>
-            <div class="mobile-nav-toggle-line-3"></div>
+          <div class="mobile-nav-toggle-line-1"></div>
+          <div class="mobile-nav-toggle-line-2"></div>
+          <div class="mobile-nav-toggle-line-3"></div>
         </button>
-        </div>
+      </div>
 
-        <div class="mobile-nav-links">
-            <a href="#experiences">Experiences</a>
-            <a href="#projects">Projects</a>
-            <a href="#contact">Contact</a>
-        </div>
-
+      <div class="mobile-nav-links">
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </div>
     </nav>
+
     <section id="hero">
-        <h1>Myat Noe</h1>
-        <p>A Software Engineer</p>
-        
-            <a href="./my-cv.txt" download="my-cv">
-                <button class="btn btn-lg">Download CV</button>
-            </a>
+      <h1>EMNP</h1>
+      <p id="role"></p>
+      <a href="./my-cv.txt" download>
+        <button class="btn btn-lg">Download CV</button>
+      </a>
 
-            <img src="./imgs/hero-1.png" class="hero-img-1">
-            <img src="./imgs/hero-2.png" class="hero-img-2">
-            <img src="./imgs/hero-3.png" class="hero-img-3">
-            <img src="./imgs/hero-4.png" class="hero-img-4">
-        
+      <img src="./imgs/hero-1.png" class="hero-img-1" />
+      <img src="./imgs/hero-2.png" class="hero-img-2" />
+      <img src="./imgs/hero-3.png" class="hero-img-3" />
+      <img src="./imgs/hero-4.png" class="hero-img-4" />
     </section>
-    <section id="experiences">
-        <h1>Experiences</h1>
 
-        <div class="timeline">
-        </div>
-        <img src="./imgs/exp-1.png" class="exp-img-1">
-        <img src="./imgs/exp-2.png" class="exp-img-2">
+    <section id="experience">
+      <h1>Experiences</h1>
+
+      <div class="timeline"></div>
+
+      <img src="./imgs/exp-1.png" class="exp-img-1" />
+      <img src="./imgs/exp-2.png" class="exp-img-2" />
     </section>
+
     <section id="projects">
-        <h1>Projects</h1>
+      <h1>Projects</h1>
+
+      <div class="project-container">
+      </div>
     </section>
-    <section id="contact"></section>
+
+    <section id="contact">
+      <div class="contact-container">
+        <h1>Contact Me</h1>
+        <div class="contact-info">
+          <a href="mailto:">eaintmyatnoe0517@gmail.com</a>
+          <a href="tel+:">09-??????????</a>
+        </div>
+      </div>
+
+      <img src="./imgs/exp-1.png" class="contact-img-1" />
+      <img src="./imgs/exp-2.png" class="contact-img-2" />
+      <img src="./imgs/exp-1.png" class="contact-img-3" />
+      <img src="./imgs/exp-2.png" class="contact-img-4" />
+      <img src="./imgs/exp-1.png" class="contact-img-5" />
+    </section>
 
     <script src="./js/index.js"></script>
     <script src="./js/experiences.js"></script>
-</body>
+    <script src="./js/projects.js"></script>
+    <script src="./js/hero.js"></script>
+    <script src="./js/contact.js"></script>
+  </body>
 </html>
-

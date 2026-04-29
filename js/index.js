@@ -22,4 +22,20 @@ mobileNavLinks.addEventListener("click" , (e) => {
     if(e.target.tagName === "A"){
        toggleMobileNav();
     }
-})
+});
+
+const titles = document.querySelectorAll("h1");
+
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry)=> {
+        if(entry.isIntersecting){
+            entry.target.classList.add("show-title");
+        }else{
+            entry.target.classList.remove("show-title");
+        }
+    })
+});
+
+titles.forEach((title) => {
+    observer.observe(title);
+});
